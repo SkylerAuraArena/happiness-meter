@@ -1,8 +1,20 @@
+html {
+  font-size: 16px; /* Default setting, 1rem = 16px */
+}
+
+body {
+  font-family: 'Calibri', 'Arial', sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4 {
   color: #000000;
+}
+
+p, li {
+  text-align: justify;
 }
 
 code {
@@ -17,8 +29,13 @@ div[data-testid="stDecoration"] {
   display: none;
 }
 
+img {
+  padding-top: 1vh;
+}
+
 footer {
-  display: none;
+  margin-top: 1.5vh;
+  /* display: none; */
 }
 
 /* Radio buttons */
@@ -26,6 +43,12 @@ footer {
 .st-cc {
   color: black;
   font-weight: 500;
+}
+
+section[data-testid="stSidebar"] .st-bk {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 /* Sidebar */
@@ -61,10 +84,6 @@ section[data-testid="stSidebar"] .st-bk {
   box-shadow: -1.5px 0 .4em #D3D3D3;
 }
 
-section[data-testid="stSidebar"] .st-c0 {
-  background-color: black;
-}
-
 section[data-testid="stSidebar"] hr {
   margin-top: 30px;
   border-color: white;
@@ -95,4 +114,18 @@ hr {
 section[tabindex="0"] .block-container {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+/* About */
+.divrefs {
+  width: 30vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.spanrefs{
+  min-width: content-fit;
 }
